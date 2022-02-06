@@ -8,4 +8,6 @@ class DBcon:
             database = "invoice_1"
         )
         self.mycursor = self.mydb.cursor()
-        #heheheheheheh 
+        
+
+        
