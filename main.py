@@ -13,17 +13,17 @@ if ch == "1":
         print("*** Category Management System ***")
         print("ADD category(1)|| DELETE category(2)")
         catch = input("Enter Choice : ")
-        if catch== "1":
+        
+        if catch == "1":
             # Adding category
-            newcat = input("enter new Category : ")
-            ob1.record_Add(newcat)
+            ob1.cat_Add()
         if catch=="2":
             # Deleting category
             ob1.cat_display()
             delcat = int(input("enter category ID : "))
             sure = input("Are you Sure you want to Delete, press ? y/n : ")
             if sure=="y":
-                ob1.record_Del(delcat)
+                ob1.cat_Del(delcat)
             else:
                 print("Aborted!!!")
     # brand(2)
