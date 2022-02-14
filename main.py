@@ -1,6 +1,6 @@
 from functions import master
 ob1 = master()
-print("*** INVOIVE MANAGEMENT SYSTEM ***")
+print("*** INVOICE MANAGEMENT SYSTEM ***")
 print("*** Master press(1)||Invoice press(2)||View press(3) ***")
 ch = input("Enter choice : ")
 #__MASTER__
@@ -44,6 +44,15 @@ if ch == "1":
             ob1.brand_display()
             print()
             ob1.brand_Del()
+    #Client(3)
+    elif ch1 == "3":
+        print("*** Customer Management ***")
+        print("ADD customer(1)|| DELETE customer(2)")
+        clientch = input("Enter Choice : ")
+        if clientch== "1":
+            ob1.cust_Add()
+            
+        # elif clientch == "2":
 
 
 

@@ -1,4 +1,5 @@
 from dbcon import DBcon
+
 class master(DBcon):
     #__category__table
     def cat_display(self):
@@ -88,8 +89,11 @@ class master(DBcon):
                 else:
                     print("Brand ID does not exists,Please Re-Enter !!")
                     ob1.brand_Del()
+    #customer_add
+    def cust_Add(self):
+        
+
+
                     
-
-
-# class calling -- 
-ob1=master()
+# class calling --
+ob1 = master()
